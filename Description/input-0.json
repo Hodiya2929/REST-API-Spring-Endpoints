@@ -1,0 +1,27 @@
+{
+    "hosts": [
+        {
+            "host_id": "host-a211de",
+            "name": "jira_server",
+            "labels": [
+                "ci",
+                "dev"
+            ]
+        },
+        {
+            "host_id": "host-c7bac01a07",
+            "name": "bastion",
+            "labels": [
+                "ssh",
+                "dev"
+            ]
+        }
+    ],
+    "fw_rules": [
+        {
+            "fw_rule_id": "fw-82af742",
+            "src_label": "ssh",
+            "dst_label": "dev"
+        }
+    ]
+}

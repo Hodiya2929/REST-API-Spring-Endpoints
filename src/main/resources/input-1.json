@@ -1,0 +1,122 @@
+{
+    "hosts": [
+        {
+            "host_id": "host-b8e6c350",
+            "name": "rabbitmq",
+            "labels": [
+                "windows-dc"
+            ]
+        },
+        {
+            "host_id": "host-c1e6285f",
+            "name": "k8s node",
+            "labels": [
+                "http",
+                "ci"
+            ]
+        },
+        {
+            "host_id": "host-cf1f8621",
+            "name": "k8s node",
+            "labels": [
+                "windows-dc"
+            ]
+        },
+        {
+            "host_id": "host-b462c04",
+            "name": "jira server",
+            "labels": [
+                "windows-dc",
+                "storage"
+            ]
+        },
+        {
+            "host_id": "host-8d2d12765",
+            "name": "kafka",
+            "labels": []
+        },
+        {
+            "host_id": "host-9cbedf7c66",
+            "name": "etcd node",
+            "labels": []
+        },
+        {
+            "host_id": "host-ae24e37f8a",
+            "name": "frontend server",
+            "labels": [
+                "api",
+                "dev"
+            ]
+        },
+        {
+            "host_id": "host-e30d5fa49a",
+            "name": "etcd node",
+            "labels": [
+                "dev",
+                "api"
+            ]
+        },
+        {
+            "host_id": "host-1b1cc9cd",
+            "name": "billing service",
+            "labels": []
+        },
+        {
+            "host_id": "host-f270036588",
+            "name": "kafka",
+            "labels": []
+        }
+    ],
+    "fw_rules": [
+        {
+            "fw_rule_id": "fw-c4a11ac",
+            "src_label": "k8s",
+            "dst_label": "loadbalancer"
+        },
+        {
+            "fw_rule_id": "fw-1cb4c1",
+            "src_label": "django",
+            "dst_label": "django"
+        },
+        {
+            "fw_rule_id": "fw-0d91970ee",
+            "src_label": "corp",
+            "dst_label": "django"
+        },
+        {
+            "fw_rule_id": "fw-778beb64",
+            "src_label": "django",
+            "dst_label": "nat"
+        },
+        {
+            "fw_rule_id": "fw-1008d7",
+            "src_label": "ssh",
+            "dst_label": "ssh"
+        },
+        {
+            "fw_rule_id": "fw-1c8ebac1f",
+            "src_label": "loadbalancer",
+            "dst_label": "corp"
+        },
+        {
+            "fw_rule_id": "fw-06bf6a628",
+            "src_label": "nat",
+            "dst_label": "nat"
+        },
+        {
+            "fw_rule_id": "fw-9d030bb4bb",
+            "src_label": "corp",
+            "dst_label": "nat"
+        },
+        {
+            "fw_rule_id": "fw-fbcfcc16e1",
+            "src_label": "antivirus",
+            "dst_label": "nat"
+        },
+        {
+            "fw_rule_id": "fw-c74204",
+            "src_label": "antivirus",
+            "dst_label": "antivirus"
+        }
+    ]
+}
